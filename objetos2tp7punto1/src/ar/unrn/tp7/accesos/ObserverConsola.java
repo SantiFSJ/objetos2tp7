@@ -6,7 +6,7 @@ public class ObserverConsola implements Observer {
 
 	@Override
 	public void actualizar(String temperatura) {
-		int temperaturaValor = Integer.valueOf(temperatura.);
+		int temperaturaValor = Integer.valueOf(temperatura.substring(0, 2).trim());
 		System.out.println(temperaturaValor);
 		if (temperaturaValor < 12)
 			System.out.println("Hace frio, se encendera la Caldera");
